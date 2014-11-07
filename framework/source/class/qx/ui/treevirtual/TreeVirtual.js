@@ -673,10 +673,12 @@ qx.Class.define("qx.ui.treevirtual.TreeVirtual",
             break;
 
           case "Left":
+            consumed = true;
             this.moveFocusedCell(-1, 0);
             break;
 
           case "Right":
+            consumed = true;
             this.moveFocusedCell(1, 0);
             break;
         }
