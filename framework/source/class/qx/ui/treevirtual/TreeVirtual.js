@@ -671,16 +671,6 @@ qx.Class.define("qx.ui.treevirtual.TreeVirtual",
               consumed = true;
             }
             break;
-
-          case "Left":
-            consumed = true;
-            this.moveFocusedCell(-1, 0);
-            break;
-
-          case "Right":
-            consumed = true;
-            this.moveFocusedCell(1, 0);
-            break;
         }
       }
       else if (modifiers == qx.event.type.Dom.CTRL_MASK)
