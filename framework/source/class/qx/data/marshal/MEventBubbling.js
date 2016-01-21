@@ -64,9 +64,6 @@ qx.Mixin.define("qx.data.marshal.MEventBubbling",
      */
     _applyEventPropagation : function(value, old, name)
     {
-      if(value instanceof Date && old instanceof Date && value.getTime() == old.getTime())
-        return;
-
       this.fireDataEvent("changeBubble", {
         value: value, name: name, old: old, item: this
       });
