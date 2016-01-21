@@ -994,7 +994,8 @@ qx.Bootstrap.define("qx.core.Property",
       );
 
       if (incomingValue) {
-        code.push('if(this.', store, '===value)return value;');
+        code.push('if(this.', store, '===value || ',
+          'this.', store, ' instanceof Date && value instanceof Date && this.', store, '.getTime()===value.getTime())return value;');
       } else if (resetValue) {
         code.push('if(this.', store, '===undefined)return;');
       }
