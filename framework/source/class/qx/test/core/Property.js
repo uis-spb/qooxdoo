@@ -26,6 +26,8 @@ qx.Class.define("qx.test.core.Property",
 {
   extend : qx.dev.unit.TestCase,
 
+  include: [qx.dev.unit.MMock],
+
   members :
   {
     testBasic : function()
@@ -569,6 +571,27 @@ qx.Class.define("qx.test.core.Property",
       }, "Change event not fired!");
 
       object.dispose();
+    },
+
+    testNoEventWhenSetSameDateObject: function() {
+      qx.Class.define("qx.TestProperty", {
+        extend: qx.core.Object,
+
+        properties: {
+          prop: {
+            check: "Date",
+            event: "changeProp"
+          }
+        }
+      });
+      var spy = this.spy();
+      var object = new qx.TestProperty();
+      object.addListener("changeProp", spy, this);
+
+      object.setProp(new Date(123));
+      object.setProp(new Date(123));
+
+      this.assertTrue(spy.calledOnce);
     }
   }
 });
