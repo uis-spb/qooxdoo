@@ -118,6 +118,7 @@ qx.Bootstrap.define("qx.bom.client.OperatingSystem",
       "Windows NT 5.0" : "2000",
       "Windows 2000" : "2000",
       "Windows NT 4.0" : "nt4",
+      "Windows NT 10.0": "10",
 
       "Win 9x 4.90" : "me",
       "Windows CE" : "ce",

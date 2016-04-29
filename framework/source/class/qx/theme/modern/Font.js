@@ -29,13 +29,15 @@ qx.Theme.define("qx.theme.modern.Font",
     {
       size : (qx.core.Environment.get("os.name") == "win" &&
         (qx.core.Environment.get("os.version") == "7" ||
-        qx.core.Environment.get("os.version") == "vista")) ? 12 : 11,
+        qx.core.Environment.get("os.version") == "vista" ||
+        qx.core.Environment.get("os.version") == "10")) ? 12 : 11,
       lineHeight : 1.4,
       family : qx.core.Environment.get("os.name") == "osx" ?
         [ "Lucida Grande" ] :
         ((qx.core.Environment.get("os.name") == "win" &&
           (qx.core.Environment.get("os.version") == "7" ||
-          qx.core.Environment.get("os.version") == "vista"))) ?
+          qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10")) ?
         [ "Segoe UI", "Candara" ] :
         [ "Tahoma", "Liberation Sans", "Arial", "sans-serif" ]
     },
@@ -44,13 +46,15 @@ qx.Theme.define("qx.theme.modern.Font",
     {
       size : (qx.core.Environment.get("os.name") == "win" &&
         (qx.core.Environment.get("os.version") == "7" ||
-        qx.core.Environment.get("os.version") == "vista")) ? 12 : 11,
+        qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10") ? 12 : 11,
       lineHeight : 1.4,
       family : qx.core.Environment.get("os.name") == "osx" ?
         [ "Lucida Grande" ] :
         ((qx.core.Environment.get("os.name") == "win" &&
           (qx.core.Environment.get("os.version") == "7" ||
-          qx.core.Environment.get("os.version") == "vista"))) ?
+          qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10")) ?
         [ "Segoe UI", "Candara" ] :
         [ "Tahoma", "Liberation Sans", "Arial", "sans-serif" ],
       bold : true
@@ -60,13 +64,15 @@ qx.Theme.define("qx.theme.modern.Font",
     {
       size : (qx.core.Environment.get("os.name") == "win" &&
         (qx.core.Environment.get("os.version") == "7" ||
-        qx.core.Environment.get("os.version") == "vista")) ? 11 : 10,
+        qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10") ? 11 : 10,
       lineHeight : 1.4,
       family : qx.core.Environment.get("os.name") == "osx" ?
         [ "Lucida Grande" ] :
         ((qx.core.Environment.get("os.name") == "win" &&
           (qx.core.Environment.get("os.version") == "7" ||
-          qx.core.Environment.get("os.version") == "vista"))) ?
+          qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10")) ?
         [ "Segoe UI", "Candara" ] :
         [ "Tahoma", "Liberation Sans", "Arial", "sans-serif" ]
     },
@@ -79,7 +85,8 @@ qx.Theme.define("qx.theme.modern.Font",
         [ "Lucida Console", "Monaco" ] :
         ((qx.core.Environment.get("os.name") == "win" &&
           (qx.core.Environment.get("os.version") == "7" ||
-          qx.core.Environment.get("os.version") == "vista"))) ?
+          qx.core.Environment.get("os.version") == "vista") ||
+        qx.core.Environment.get("os.version") == "10")) ?
         [ "Consolas" ] :
         [ "Consolas", "DejaVu Sans Mono", "Courier New", "monospace" ]
     }
