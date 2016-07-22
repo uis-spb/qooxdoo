@@ -1,5 +1,5 @@
 # Czech
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: qooxdoo framework\n"

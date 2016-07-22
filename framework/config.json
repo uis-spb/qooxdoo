@@ -56,7 +56,8 @@
        "pt",  // Portuguese
        "ro",
        "sl",  // Slovene
-       "sv"   // Swedish
+       "sv",  // Swedish
+	   "ru"
     ],
     "CACHE"        : "${TMPDIR}/qx${QOOXDOO_VERSION}/cache"
   },
