@@ -1,0 +1,288 @@
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: you@your.org\n"
+"POT-Creation-Date: 2016-07-22 14:31+0300\n"
+"PO-Revision-Date: 2016-07-22 14:31+0300\n"
+"Last-Translator: you <you@your.org>\n"
+"Language-Team: Team <yourteam@your.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "%1 does not fit %2."
+msgstr ""
+
+msgid "%1 is not a color! %2"
+msgstr ""
+
+msgid "%1 is not a number."
+msgstr ""
+
+msgid "%1 is not a string."
+msgstr ""
+
+msgid "%1 is not an url."
+msgstr ""
+
+msgid "%1 is not in %2"
+msgstr ""
+
+msgid "%1 is not in the range from [%2, %3]."
+msgstr ""
+
+msgid "'%1' is not an email address."
+msgstr ""
+
+msgid "Automatic"
+msgstr ""
+
+msgid "Basic Colors"
+msgstr ""
+
+msgid "Cancel"
+msgstr ""
+
+msgid "Color Selector"
+msgstr ""
+
+msgid "Details"
+msgstr ""
+
+msgid "HSB"
+msgstr ""
+
+msgid "Hex"
+msgstr ""
+
+msgid "Last month"
+msgstr "Пред. месяц"
+
+msgid "Last year"
+msgstr "Пред. год"
+
+msgid "Next month"
+msgstr "След. месяц"
+
+msgid "Next year"
+msgstr "След. год"
+
+msgid "OK"
+msgstr ""
+
+msgid "Open ColorSelector"
+msgstr ""
+
+msgid "Presets"
+msgstr ""
+
+msgid "Preview (Old/New)"
+msgstr ""
+
+msgid "RGB"
+msgstr ""
+
+msgid "Recent Colors"
+msgstr ""
+
+msgid "Reset column widths"
+msgstr ""
+
+msgid "This field is required"
+msgstr ""
+
+msgid "Visual"
+msgstr ""
+
+msgid "key_full_Alt"
+msgstr ""
+
+msgid "key_full_Apps"
+msgstr ""
+
+msgid "key_full_Backspace"
+msgstr ""
+
+msgid "key_full_CapsLock"
+msgstr ""
+
+msgid "key_full_Control"
+msgstr ""
+
+msgid "key_full_Control_Mac"
+msgstr ""
+
+msgid "key_full_Delete"
+msgstr ""
+
+msgid "key_full_Down"
+msgstr ""
+
+msgid "key_full_End"
+msgstr ""
+
+msgid "key_full_Enter"
+msgstr ""
+
+msgid "key_full_Escape"
+msgstr ""
+
+msgid "key_full_Home"
+msgstr ""
+
+msgid "key_full_Insert"
+msgstr ""
+
+msgid "key_full_Left"
+msgstr ""
+
+msgid "key_full_Meta"
+msgstr ""
+
+msgid "key_full_NumLock"
+msgstr ""
+
+msgid "key_full_PageDown"
+msgstr ""
+
+msgid "key_full_PageUp"
+msgstr ""
+
+msgid "key_full_Pause"
+msgstr ""
+
+msgid "key_full_PrintScreen"
+msgstr ""
+
+msgid "key_full_Right"
+msgstr ""
+
+msgid "key_full_Scroll"
+msgstr ""
+
+msgid "key_full_Shift"
+msgstr ""
+
+msgid "key_full_Space"
+msgstr ""
+
+msgid "key_full_Tab"
+msgstr ""
+
+msgid "key_full_Up"
+msgstr ""
+
+msgid "key_full_Win"
+msgstr ""
+
+msgid "key_short_Alt"
+msgstr ""
+
+msgid "key_short_Apps"
+msgstr ""
+
+msgid "key_short_Backspace"
+msgstr ""
+
+msgid "key_short_CapsLock"
+msgstr ""
+
+msgid "key_short_Control"
+msgstr ""
+
+msgid "key_short_Control_Mac"
+msgstr ""
+
+msgid "key_short_Delete"
+msgstr ""
+
+msgid "key_short_Down"
+msgstr ""
+
+msgid "key_short_End"
+msgstr ""
+
+msgid "key_short_Enter"
+msgstr ""
+
+msgid "key_short_Escape"
+msgstr ""
+
+msgid "key_short_Home"
+msgstr ""
+
+msgid "key_short_Insert"
+msgstr ""
+
+msgid "key_short_Left"
+msgstr ""
+
+msgid "key_short_Meta"
+msgstr ""
+
+msgid "key_short_NumLock"
+msgstr ""
+
+msgid "key_short_PageDown"
+msgstr ""
+
+msgid "key_short_PageUp"
+msgstr ""
+
+msgid "key_short_Pause"
+msgstr ""
+
+msgid "key_short_PrintScreen"
+msgstr ""
+
+msgid "key_short_Right"
+msgstr ""
+
+msgid "key_short_Scroll"
+msgstr ""
+
+msgid "key_short_Shift"
+msgstr ""
+
+msgid "key_short_Space"
+msgstr ""
+
+msgid "key_short_Tab"
+msgstr ""
+
+msgid "key_short_Up"
+msgstr ""
+
+msgid "key_short_Win"
+msgstr ""
+
+msgid "one of one row"
+msgid_plural "%1 of %2 rows"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "one row"
+msgid_plural "%1 rows"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "test Hello %1!"
+msgstr ""
+
+msgid "test Jonny"
+msgstr ""
+
+msgid "test One car"
+msgid_plural "test %1 cars"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "test affe"
+msgstr ""
+
+msgid "test one"
+msgstr ""
+
+msgid "test two"
+msgstr ""
