@@ -104,7 +104,7 @@ qx.Class.define("qx.data.marshal.Json",
      *   the bubbling of change events or not.
      */
     toClass: function(data, includeBubbleEvents) {
-      this.__toClass(data, includeBubbleEvents, null, 0);
+      this._toClass(data, includeBubbleEvents, null, 0);
     },
 
 
@@ -128,7 +128,7 @@ qx.Class.define("qx.data.marshal.Json",
         // check for arrays
         if (data instanceof Array || qx.Bootstrap.getClass(data) == "Array") {
           for (var i = 0; i < data.length; i++) {
-            this.__toClass(data[i], includeBubbleEvents, parentProperty + "[" + i + "]", depth+1);
+            this._toClass(data[i], includeBubbleEvents, parentProperty + "[" + i + "]", depth+1);
           }
         }
 
@@ -145,7 +145,7 @@ qx.Class.define("qx.data.marshal.Json",
 
       // check for the possible child classes
       for (var key in data) {
-        this.__toClass(data[key], includeBubbleEvents, key, depth+1);
+        this._toClass(data[key], includeBubbleEvents, key, depth+1);
       }
 
       // class already exists
@@ -323,7 +323,7 @@ qx.Class.define("qx.data.marshal.Json",
      * @return {qx.core.Object} The created model object.
      */
     toModel: function(data) {
-      return this.__toModel(data, null, 0);
+      return this._toModel(data, null, 0);
     },
 
 
@@ -363,7 +363,7 @@ qx.Class.define("qx.data.marshal.Json",
         array.setAutoDisposeItems(true);
 
         for (var i = 0; i < data.length; i++) {
-          array.push(this.__toModel(data[i], parentProperty + "[" + i + "]", depth+1));
+          array.push(this._toModel(data[i], parentProperty + "[" + i + "]", depth+1));
         }
         return array;
 
@@ -396,7 +396,7 @@ qx.Class.define("qx.data.marshal.Json",
           // only set the properties if they are available [BUG #5909]
           var setterName = "set" + qx.lang.String.firstUp(propertyName);
           if (model[setterName]) {
-            model[setterName](this.__toModel(data[key], key, depth+1));
+            model[setterName](this._toModel(data[key], key, depth+1));
           }
         }
         return model;
