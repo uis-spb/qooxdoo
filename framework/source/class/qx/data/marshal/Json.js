@@ -118,7 +118,7 @@ qx.Class.define("qx.data.marshal.Json",
      *   data will be stored in.
      * @param depth {Number} The depth of the data relative to the data's root.
      */
-    __toClass : function(data, includeBubbleEvents, parentProperty, depth) {
+    _toClass : function(data, includeBubbleEvents, parentProperty, depth) {
       // break on all primitive json types and qooxdoo objects
       if (
         !qx.lang.Type.isObject(data)
@@ -336,7 +336,7 @@ qx.Class.define("qx.data.marshal.Json",
      * @param depth {Number} The depth of the data relative to the data's root.
      * @return {qx.core.Object} The created model object.
      */
-    __toModel: function(data, parentProperty, depth) {
+    _toModel: function(data, parentProperty, depth) {
       var isObject = qx.lang.Type.isObject(data);
       var isArray = data instanceof Array || qx.Bootstrap.getClass(data) == "Array";
 
