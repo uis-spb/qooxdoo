@@ -192,7 +192,7 @@ qx.Class.define("qx.ui.form.TextArea",
 
         // On init, the clone is not yet present. Try again on appear.
         } else {
-          this.getContentElement().addListenerOnce("appear", function() {
+          this.getContentElement().addListener("appear", function() {
             this.__autoSize();
           }, this);
         }
