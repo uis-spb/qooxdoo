@@ -372,13 +372,15 @@ qx.Class.define("qx.data.Array",
 
         if (returnArray.length == 0) {
           var type = "add";
-          var end = startIndex + addedItems.length;
+          var end = this.length - 1;
         } else if (addedItems.length == 0) {
           var type = "remove";
           var end = this.length - 1;
         } else {
           var type = "add/remove";
-          var end = startIndex + Math.max(addedItems.length, returnArray.length) - 1;
+          var end = addedItems.length != amount?
+            this.length - 1:
+            startIndex + amount - 1;
         }
 
         this.fireDataEvent("change",

@@ -546,7 +546,7 @@ qx.Class.define("qx.test.data.DataArray",
         a.splice(0, 0, "x").dispose();
       }, function(e) {
         self.assertEquals(0, e.getData().start, "Wrong start index in the event. (add)");
-        self.assertEquals(1, e.getData().end, "Wrong end index in the event. (add)");
+        self.assertEquals(3, e.getData().end, "Wrong end index in the event. (add)");
         self.assertEquals("add", e.getData().type, "Wrong type in the event. (add)");
         self.assertEquals("x", e.getData().added[0], "Wrong items in the event. (add)");
         self.assertEquals(1, e.getData().added.length, "Wrong amount of items in the event. (add)");
@@ -566,6 +566,21 @@ qx.Class.define("qx.test.data.DataArray",
         self.assertEquals(1, e.getData().added.length, "Wrong amount of items in the event. (add/remove)");
         self.assertEquals("a", e.getData().removed[0], "Wrong items in the event. (add/remove)");
         self.assertEquals(1, e.getData().removed.length, "Wrong amount of items in the event. (add/remove)");
+      }, "Change event not fired!");
+      a.dispose();
+
+      // test for the event (add/remove) with different amount of added and removed
+      a = new qx.data.Array("a", "b", "c");
+      this.assertEventFired(a, "change", function () {
+        a.splice(0, 1, "x", "y").dispose();
+      }, function(e) {
+        self.assertEquals(0, e.getData().start, "Wrong start index in the event. (add/remove) with diff amount");
+        self.assertEquals(3, e.getData().end, "Wrong end index in the event. (add/remove) with diff amount");
+        self.assertEquals("add/remove", e.getData().type, "Wrong type in the event. (add/remove) with diff amount");
+        self.assertEquals("x", e.getData().added[0], "Wrong items in the event. (add/remove) with diff amount");
+        self.assertEquals(2, e.getData().added.length, "Wrong amount of items in the event. (add/remove) with diff amount");
+        self.assertEquals("a", e.getData().removed[0], "Wrong items in the event. (add/remove) with diff amount");
+        self.assertEquals(1, e.getData().removed.length, "Wrong amount of items in the event. (add/remove) with diff amount");
       }, "Change event not fired!");
       a.dispose();
 
