@@ -242,7 +242,7 @@ qx.Class.define("qx.event.handler.DragDrop",
         throw new Error("Unsupported data type: " + type + "!");
       }
 
-      if (!this.__cache[type])
+      if (this.__cache[type] === undefined)
       {
         this.__currentType = type;
         this.__fireEvent("droprequest", this.__dragTarget, this.__dropTarget, false);
@@ -252,7 +252,7 @@ qx.Class.define("qx.event.handler.DragDrop",
         throw new Error("Please use a droprequest listener to the drag source to fill the manager with data!");
       }
 
-      return this.__cache[type] || null;
+      return this.__cache[type];
     },
 
 
