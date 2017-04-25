@@ -248,7 +248,7 @@ qx.Class.define("qx.event.handler.DragDrop",
         this.__fireEvent("droprequest", this.__dragTarget, this.__dropTarget, false);
       }
 
-      if (!this.__cache[type]) {
+      if (this.__cache[type] === undefined) {
         throw new Error("Please use a droprequest listener to the drag source to fill the manager with data!");
       }
 
