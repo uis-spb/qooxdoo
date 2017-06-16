@@ -219,12 +219,6 @@ qx.Class.define("qx.ui.form.TextArea",
 
         qx.ui.core.queue.Layout.add(this);
 
-        // Apply height directly. This works-around a visual glitch in WebKit
-        // browsers where a line-break causes the text to be moved upwards
-        // for one line. Since this change appears instantly whereas the queue
-        // is computed later, a flicker is visible.
-        qx.ui.core.queue.Manager.flush();
-
         this.__forceRewrap();
       }
     },
