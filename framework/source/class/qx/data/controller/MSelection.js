@@ -400,5 +400,8 @@ qx.Mixin.define("qx.data.controller.MSelection",
     if (this.__ownSelection) {
       this.__ownSelection.dispose();
     }
+    if(this.__selectionListenerId) {
+      this.getTarget().removeListenerById(this.__selectionListenerId);
+    }
   }
 });

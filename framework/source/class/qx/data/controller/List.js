@@ -1006,6 +1006,10 @@ qx.Class.define("qx.data.controller.List",
    destruct : function() {
      this.__lookupTable = this.__onUpdate = this.__boundProperties = null;
      this.__boundPropertiesReverse = null;
+     var model = this.getModel();
+     if(model) {
+       model.removeListenerById(this.__changeModelListenerId);
+     }
 
      // remove yourself from the widget queue
      qx.ui.core.queue.Widget.remove(this);
