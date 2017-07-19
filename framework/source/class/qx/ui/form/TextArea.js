@@ -191,7 +191,7 @@ qx.Class.define("qx.ui.form.TextArea",
           this._setAreaHeight(desiredHeight);
 
         // On init, the clone is not yet present. Try again on appear.
-        } else {
+        } else if (!this.getContentElement().hasListener("appear")) {
           this.getContentElement().addListener("appear", function() {
             this.__autoSize();
           }, this);
