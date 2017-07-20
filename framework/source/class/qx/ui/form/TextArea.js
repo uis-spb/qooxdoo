@@ -214,7 +214,7 @@ qx.Class.define("qx.ui.form.TextArea",
     * @param height {Integer} Desired height of <code>TextArea</code>
     */
     _setAreaHeight: function(height) {
-      if (this._getAreaHeight() !== height) {
+      if (this.__areaHeight !== height) {
         this.__areaHeight = height;
 
         qx.ui.core.queue.Layout.add(this);
